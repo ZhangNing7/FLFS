@@ -5,7 +5,7 @@ load('Scene_data.mat')
 
 [num_train, num_label] = size(Y_train); [num_test, num_feature] = size(X_test);
 
-pca_remained =50 ;
+pca_remained = round(num_feature*0.95);
 
 all = [X_train; X_test]; 
 ave = mean(all);
